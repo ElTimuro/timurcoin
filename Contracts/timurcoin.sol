@@ -14,10 +14,11 @@ pragma solidity ^0.5.11;contract timurCoin { // set contract name to token name
     mapping(address => mapping (address => uint256)) allowed;
     function tokenName() public { // Set the constructor to the same name as the contract name
         name = "timurCoin"; // set the token name here
-        symbol = "TMC"; // set the Symbol here
+        symbol = "timc"; // set the Symbol here
         decimals = 18; // set the number of decimals
         devAddress = 0xc9BB80Bd7C4676CA98292826c8ED71fb08dbcE36; // Add the address that you will distribute tokens from here
-        uint initialBalance = 1000000000000000000*1000000; // 1M tokens
+        // TODO distribute bei Proof of Stake
+        uint initialBalance = 1000000000000000000*100000; // 1M tokens
         balances[devAddress] = initialBalance;
         totalSupply += initialBalance; // Set the total suppy
     }
