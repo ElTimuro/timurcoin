@@ -1,4 +1,4 @@
-pragma solidity ^0.5.11;contract timurCoin { // set contract name to token name
+pragma solidity ^0.5.11;contract TimurCoin { // set contract name to token name
     string public name;
     string public symbol;
     uint8 public decimals;
